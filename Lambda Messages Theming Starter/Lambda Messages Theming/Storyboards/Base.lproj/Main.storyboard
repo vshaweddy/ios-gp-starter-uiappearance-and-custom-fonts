@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bIV-6a-Zxn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bIV-6a-Zxn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Signup View Controller-->
+        <!--Sign Up-->
         <scene sceneID="b5R-f5-uPe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mcb-C4-Tdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="y1R-7e-WId" customClass="SignupViewController" customModule="Lambda_Messages_Theming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k5a-ag-SDx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -47,35 +44,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oIk-xC-6cu"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mRR-qi-ned"/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="mRR-qi-ned"/>
                     <connections>
                         <outlet property="signupButton" destination="92S-Bj-ZNr" id="Sbs-Oh-j0i"/>
                         <outlet property="usernameTextField" destination="YVk-EF-Vac" id="KFQ-Ps-QvR"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ViewMessageList" id="BRE-ao-4OH"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcb-C4-Tdr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="76" y="186.94581280788179"/>
         </scene>
         <!--Lambda Messages-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="8ad-Rz-WGM">
-                    <rect key="frame" x="0.0" y="0.0" width="382" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-OJ-4FS">
-                            <rect key="frame" x="16" y="6" width="350" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <viewLayoutGuide key="safeArea" id="5aY-MS-FHy"/>
-                </view>
                 <viewController id="BYZ-38-t0r" customClass="MessageListViewController" customModule="Lambda_Messages_Theming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -130,7 +112,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yry-iv-M4M">
-                                <rect key="frame" x="301" y="593.5" width="53.5" height="53.5"/>
+                                <rect key="frame" x="301.5" y="593.5" width="53.5" height="53.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yry-iv-M4M" secondAttribute="height" multiplier="1:1" id="pBD-OY-UXh"/>
                                 </constraints>
@@ -159,13 +141,28 @@
                         <outlet property="tableView" destination="Mpq-ry-FvX" id="RaY-Gd-jG4"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="8ad-Rz-WGM">
+                    <rect key="frame" x="0.0" y="0.0" width="382" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-OJ-4FS">
+                            <rect key="frame" x="16" y="6" width="350" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="5aY-MS-FHy"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="984.79999999999995" y="186.94581280788179"/>
         </scene>
         <!--Title-->
         <scene sceneID="7Ek-yA-mlb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aie-RP-qxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="rN2-0q-xFi" customClass="MessageCreationViewController" customModule="Lambda_Messages_Theming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rdd-9z-aaR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -235,13 +232,13 @@
                         <outlet property="sendMessageButton" destination="ee1-Yp-nDg" id="nQP-Df-gNf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aie-RP-qxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1868" y="187"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rce-2g-NFJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PT0-eT-Ing" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bIV-6a-Zxn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="XGc-MO-GdL">
@@ -253,6 +250,7 @@
                         <segue destination="y1R-7e-WId" kind="relationship" relationship="rootViewController" id="rhB-in-Iwq"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PT0-eT-Ing" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-863.20000000000005" y="187.55622188905548"/>
         </scene>

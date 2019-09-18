@@ -18,6 +18,8 @@ class MessageListViewController: UIViewController, UITableViewDelegate, UITableV
         
         NotificationCenter.default.addObserver(self, selector: #selector(sortMessageArray), name: messagesWereUpdatedNotification, object: nil)
         
+//        navigationController?.navigationBar.barTintColor = .green
+        
         messageController.fetchMessages()
     }
     

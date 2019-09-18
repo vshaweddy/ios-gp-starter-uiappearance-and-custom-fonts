@@ -18,6 +18,7 @@
 		46A2C109212B626F00E7FF73 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2C108212B626F00E7FF73 /* MessageController.swift */; };
 		46A2C10B212B659500E7FF73 /* AuthenticationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2C10A212B659500E7FF73 /* AuthenticationHelper.swift */; };
 		46A2C10D212B68B800E7FF73 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2C10C212B68B800E7FF73 /* SignupViewController.swift */; };
+		E35433B42331D0AE00C58208 /* AppearanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35433B32331D0AE00C58208 /* AppearanceHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		46A2C108212B626F00E7FF73 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		46A2C10A212B659500E7FF73 /* AuthenticationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHelper.swift; sourceTree = "<group>"; };
 		46A2C10C212B68B800E7FF73 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E35433B32331D0AE00C58208 /* AppearanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppearanceHelper.swift; path = ../Storyboards/AppearanceHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		46392CFE212D2BF500C65AB7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E35433B32331D0AE00C58208 /* AppearanceHelper.swift */,
 				46A2C10A212B659500E7FF73 /* AuthenticationHelper.swift */,
 			);
 			path = Helpers;
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A2C10D212B68B800E7FF73 /* SignupViewController.swift in Sources */,
+				E35433B42331D0AE00C58208 /* AppearanceHelper.swift in Sources */,
 				46A2C107212B61FB00E7FF73 /* Message.swift in Sources */,
 				46A2C109212B626F00E7FF73 /* MessageController.swift in Sources */,
 				46A2C105212B60D100E7FF73 /* MessageListViewController.swift in Sources */,
